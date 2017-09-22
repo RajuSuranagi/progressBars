@@ -1,14 +1,51 @@
+.row{
+    background-color: #ececec;
+}
+
 .progressbar {
     margin: 30px 0 30px 0;
     padding: 20px 0 20px 0;
+}
+
+.outer-ring{
+    border: 1px solid red;
+    border-radius: 63px;
+    width: 96px;
+    box-shadow: 0 0 10px #696969;
+}
+
+.circle-bar{
+    width: 90px;
+    height: 90px;
+    border: 8px solid red;
+    background: #fffdfd;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+}
+
+
+.inset-data{
+    padding:15px;
 }
 
 .glyphicon{
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     display: inline-block;
+    left: 13px;
 }
 
 .perc-text{
     font-weight: 400;
+
+}
+
+.label-text{
+    color: darkgray;
+    font-weight: bolder;
+    left:auto;
+    right:auto;
+    padding: 10px 0px;
+    position: relative;
 }
