@@ -20,13 +20,19 @@ class App extends Component {
             || progressBars.length == 0 ){
             return ;
         }
-        return progressBars.map((bar,index)=>{
-            return (
-                <div className="col-md-4 progressbar">
-                    <CircularProgressBar key={index} percentage={bar.perc} iconClass={bar.iconClass} iconColor={bar.iconColor}/>
-                </div>
-            );
-        });
+
+        return (
+            progressBars.map((bar,index)=>{
+                return (
+                    <div key={index} className="col-md-4 progressbar">
+                        <CircularProgressBar percentage={bar.perc}
+                                             iconClass={bar.iconClass}
+                                             iconColor={bar.iconColor}
+                                             labelText={bar.labelText}/>
+                    </div>
+                );
+            })
+        );
     }
 
     render(){
@@ -40,9 +46,9 @@ class App extends Component {
 
 App.defaultProps = {
     progressBars: [
-        {perc: 50, iconClass: 'glyphicon glyphicon-thumbs-up', iconColor:"red"},
-        {perc: 27, iconClass: 'glyphicon glyphicon-bullhorn', iconColor:"cyan"},
-        {perc: 76, iconClass: 'glyphicon glyphicon-user', iconColor:"yellow"}
+        {perc: 100, iconClass: 'glyphicon glyphicon-thumbs-up', iconColor:"red", labelText: "User satisfaction"},
+        {perc: 27, iconClass: 'glyphicon glyphicon-bullhorn', iconColor:"#3b7ab3", labelText:"Popularity"},
+        {perc: 76, iconClass: 'glyphicon glyphicon-user', iconColor:"#c1c32d", labelText:"New users"}
     ]
 }
 
