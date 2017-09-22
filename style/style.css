@@ -1,0 +1,14 @@
+.progressbar {
+    margin: 30px 0 30px 0;
+    padding: 20px 0 20px 0;
+}
+
+.glyphicon{
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    display: inline-block;
+}
+
+.perc-text{
+    font-weight: 400;
+}
