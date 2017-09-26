@@ -1,2 +1,2 @@
 # progressBars
-Progress bars implemented using ReactJS
+Circular progress bar implemented using ReactJS
